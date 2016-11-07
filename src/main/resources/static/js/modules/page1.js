@@ -1,4 +1,13 @@
-var common1 = require('./common/common1.js')
-(function(){
-    console.log("page1");
-})();
+import Common1 from './common/common1.js'
+
+class Page1 {
+    constructor(x){
+        this.x = x + ' Page1';
+    }
+    toString(){
+        let common1 = new Common1(this.x);
+        return common1.toString();
+    }
+}
+
+export default Page1;

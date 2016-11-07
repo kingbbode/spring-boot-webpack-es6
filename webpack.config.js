@@ -22,10 +22,22 @@ module.exports = {
         path: path.join(STATIC, 'js/dist'),
         filename: '[name].bundle.js'
     },
+    module: {
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                query:{
+                    presets: ['es2015']
+                }
+            }
+        ]
+    },
     plugins: [
         new CopyWebpackPlugin([
             { from: path.join(NODE_MODULES, 'jquery/dist/jquery.min.js'), to:VENDOR},
             { from: path.join(NODE_MODULES, 'underscore/underscore-min.js'), to:VENDOR},
+            { from: path.join(NODE_MODULES, 'moment/min/moment.min.js'), to:VENDOR}
             { from: path.join(NODE_MODULES, 'moment/min/moment.min.js'), to:VENDOR}
         ]),
         new webpack.optimize.UglifyJsPlugin({

@@ -1,7 +1,7 @@
-var page1 = require('./modules/page1.js');
-var page2 = require('./modules/page2.js');
-var page3 = require('./modules/page3.js');
+import Page1 from './modules/page1.js';
+import Page2 from './modules/page2.js';
+import Page3 from './modules/page3.js';
 
-(function(){
-    console.log("app");
-})();
+console.log(new Page1('app'));
+console.log(new Page2('app'));
+console.log(new Page3('app'));
