@@ -2,6 +2,9 @@ import Page1 from './modules/page1.js';
 import Page2 from './modules/page2.js';
 import Page3 from './modules/page3.js';
 
-console.log(new Page1('app'));
-console.log(new Page2('app'));
-console.log(new Page3('app'));
+let page1 = new Page1('app');
+let page2 = new Page2('app');
+let page3 = new Page3('app');
+console.log(page1.toString());
+console.log(page2.toString());
+console.log(page3.toString());

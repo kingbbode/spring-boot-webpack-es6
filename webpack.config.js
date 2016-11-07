@@ -38,7 +38,6 @@ module.exports = {
             { from: path.join(NODE_MODULES, 'jquery/dist/jquery.min.js'), to:VENDOR},
             { from: path.join(NODE_MODULES, 'underscore/underscore-min.js'), to:VENDOR},
             { from: path.join(NODE_MODULES, 'moment/min/moment.min.js'), to:VENDOR}
-            { from: path.join(NODE_MODULES, 'moment/min/moment.min.js'), to:VENDOR}
         ]),
         new webpack.optimize.UglifyJsPlugin({
             compressor: {
