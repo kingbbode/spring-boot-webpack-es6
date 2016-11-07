@@ -1,0 +1,24 @@
+{
+  "name": "springbootwebpackes6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "moment": "^2.11.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.0",
+    "webpack": "^1.13.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "kingbbode"
+  },
+  "author": "kingbbode",
+  "license": "MIT"
+}
