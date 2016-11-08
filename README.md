@@ -2,5 +2,13 @@
 
 > spring boot, gulp, webpack, babel
 
+## Setting
+```
+npm install
+gulp
+```
+ 
+---
+ 
 * *2016-11-07*  
 * [Kingbbode Git Page](http://kingbbode.github.io)
