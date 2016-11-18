@@ -3,8 +3,8 @@
 
 </head>
 <body>
-${message}
+<h1>${message}</h1>
 <script src="/js/dist/libs.min.js"></script>
-<script src="/js/dist/app.min.js"></script>
+<script src="/js/dist/page3.min.js"></script>
 </body>
 </html>
