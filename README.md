@@ -1,13 +1,17 @@
 # Kingbbode - es6 with webpack config env for spring boot
 
-> spring boot, gulp, webpack, babel
+> spring boot, webpack, babel, gradle
 
 ## Setting
 ```
 npm install
-gulp
+webpack
 ```
  
+## Build
+```
+npm run build
+```
 ---
  
 * *2016-11-07*  

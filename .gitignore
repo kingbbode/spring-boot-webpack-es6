@@ -27,4 +27,5 @@ nbdist/
 node_modules
 src/main/resources/static/vendor
 src/main/resources/static/js/dist
+src/main/resources/templates/footer
 classes
