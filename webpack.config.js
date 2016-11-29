@@ -48,15 +48,15 @@ const common = {
             minChunks: Infinity,
         }),
         new HtmlWebpackPlugin({
-            filename: path.join(TEMPLATES,'footer/page1_footer.ftl'),
+            filename: path.join(TEMPLATES,'layout/page1_layout.ftl'),
             chunks: ['vendor', 'page1']
         }),
         new HtmlWebpackPlugin({
-            filename: path.join(TEMPLATES,'footer/page2_footer.ftl'),
+            filename: path.join(TEMPLATES,'layout/page2_layout.ftl'),
             chunks: ['vendor', 'page2']
         }),
         new HtmlWebpackPlugin({
-            filename: path.join(TEMPLATES,'footer/page3_footer.ftl'),
+            filename: path.join(TEMPLATES,'layout/page3_layout.ftl'),
             chunks: ['vendor', 'page3']
         }),
         new webpack.NoErrorsPlugin()

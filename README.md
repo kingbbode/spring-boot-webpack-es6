@@ -9,9 +9,9 @@ webpack
 ```
  
 ## Build
-```
-npm run build
-```
+
+include gradle 'build' task
+
 ---
  
 * *2016-11-07*  

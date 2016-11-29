@@ -1,10 +1,5 @@
-<html>
-<head>
-
-</head>
-<body>
-<h1>${message}</h1>
-<script src="/js/dist/libs.min.js"></script>
-<script src="/js/dist/page1.min.js"></script>
-</body>
-</html>
+<#import './layout/page1_layout.ftl' as l />
+<@l.layout>
+<h1>Page1 Body</h1>
+<h2>${message}</h2>
+</@l.layout>

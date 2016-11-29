@@ -20,6 +20,5 @@ module.exports = {
         }),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin()
-    ],
-    devtool: 'sourcemap'
+    ]
 };
