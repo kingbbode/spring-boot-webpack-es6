@@ -1,3 +1,5 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
 buildscript {
 	ext {
 		springBootVersion = '1.4.1.RELEASE'
@@ -36,3 +38,27 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-freemarker')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+String npmCommand = (Os.isFamily(Os.FAMILY_WINDOWS)) ? 'npm.cmd' : 'npm'
+task npm(type: Exec) {
+
+	commandLine npmCommand, 'install'
+	standardOutput = new ByteArrayOutputStream()
+
+	doLast {
+		println standardOutput.toString()
+	}
+}
+task webpack(type: Exec) {
+	commandLine npmCommand, 'run', 'build'
+
+	standardOutput = new ByteArrayOutputStream()
+
+	doLast {
+		println standardOutput.toString()
+	}
+}
+
+webpack.dependsOn npm
+build.dependsOn webpack
+
